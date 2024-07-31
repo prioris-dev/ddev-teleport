@@ -1,5 +1,4 @@
 services:
   web:
     volumes:
-      source: $HOME/.tsh
-      target: $HOME/.tsh
+      - "$HOME/.tsh:/home/.tsh"
