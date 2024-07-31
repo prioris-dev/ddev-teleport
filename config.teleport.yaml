@@ -1,0 +1,9 @@
+#ddev-generated
+hooks:
+  post-start:
+    - exec: "tsh config > ~/.ssh/teleport_config"
+    - exec: "sed -i 's/%h/%n/g' ~/.ssh/teleport_config"
+    - exec: >
+        if ! grep -qF 'Include ~/.ssh/teleport_config' ~/.ssh/config; then
+          { echo 'Include ~/.ssh/teleport_config'; cat ~/.ssh/config; } > ~/.ssh/config.tmp && mv ~/.ssh/config.tmp ~/.ssh/config
+        fi

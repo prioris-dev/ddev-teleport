@@ -3,9 +3,5 @@ version: '3.7'
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: ./.webimageBuild/Dockerfile
-    container_name: ddev-${DDEV_SITENAME}-teleport
     volumes:
-      - "/home/horvath-aron/.tsh:/home/horvath-aron/.tsh"
+      - "$HOME/.tsh:$HOME/.tsh"

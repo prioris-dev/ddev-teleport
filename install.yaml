@@ -68,6 +68,7 @@ pre_install_actions:
 project_files:
   - web-build/Dockerfile.ddev-teleport
   - docker-compose.teleport.yaml
+  - config.teleport.yaml
 # - some-directory/file1.txt
 # - some-directory/file2.txt
 # - extra_files_dir_created_by_this_template/
