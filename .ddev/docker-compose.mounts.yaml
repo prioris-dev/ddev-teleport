@@ -1,4 +1,4 @@
 services:
   web:
     volumes:
-      - "$HOME/.tsh:$HOME/.tsh"
+      - "/home/horvath-aron/.tsh:/home/horvath-aron/.tsh"
