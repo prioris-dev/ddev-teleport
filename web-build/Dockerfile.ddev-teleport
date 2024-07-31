@@ -1,5 +1,2 @@
 #ddev-generated
-RUN curl https://goteleport.com/static/install.sh | bash -s 15.4.0 oss &&\
-    tsh config > ~/.ssh/teleport_config &&\
-    sed -i 's/%h/%n/g' ~/.ssh/teleport_config &&\
-    sed -i '1s/^/Include ~/.ssh/teleport_config/' ~/.ssh/config
+RUN curl https://goteleport.com/static/install.sh | bash -s 15.4.0 oss
