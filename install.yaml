@@ -67,6 +67,7 @@ pre_install_actions:
 # by this add-on, or removal could remove things that are not owned by it
 project_files:
   - web-build/Dockerfile.ddev-teleport
+  - .ddev/docker-compose.mounts.yaml
 # - some-directory/file1.txt
 # - some-directory/file2.txt
 # - extra_files_dir_created_by_this_template/
@@ -75,7 +76,6 @@ project_files:
 # List of files and directories that are copied into the global .ddev directory
 # DDEV environment variables can be interpolated into these filenames
 global_files:
-  - mounts/docker-compose.mounts.yaml
 # - commands/web/add-on-command
 # - homeadditions/some-file.txt
 
