@@ -6,3 +6,5 @@ services:
       context: .
       dockerfile: ./.webimageBuild/Dockerfile
     container_name: ddev-${DDEV_SITENAME}-teleport
+    volumes:
+      - "/home/horvath-aron/.tsh:/home/horvath-aron/.tsh"
